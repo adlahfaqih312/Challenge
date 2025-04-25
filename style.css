@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height:100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    background-image: url("./images/PatterBG.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+/* Header */
+header {
+    color: white;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.logo {
+    font-family: "Playwrite AU SA", cursive;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+}
+
+.medContent {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.medContent i, .medContent h4 {
+    padding: 3px;
+}
+
+.langauges {
+    font-size: 12px;
+}
+.mainContent {
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Image Carousel */
+.imageSection {
+    width:90%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    height: calc(.3*100vh);
+    background: white;
+    border-radius: 16px;
+}
+
+.clouser {
+    border-radius: 16px;
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.clouser-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 0px;
+}
+
+.clouser-img img {
+    width: 50%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+/* Video Section */
+.videoSection {
+    background: white;
+    width: 90%;
+    height: 70%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.selectedVideo {
+    display: flex;
+    justify-content: center;
+}
+
+.selectedVideo video {
+    padding: 12px 12px 0 12px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Video List Header */
+.Videos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    border-bottom: 1px solid grey;
+    margin: 0 16px;
+    padding: 10px 0;
+}
+
+.Videos h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.videoCount {
+    display: flex;
+    align-items: center;
+}
+
+.videoNumbers {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropDownIcon {
+    cursor: pointer;
+}
+.dropDownIcon i {
+    transition: transform 0.3s ease;
+}
+
+.dropDownIcon.rotate i {
+    transform: rotate(180deg);
+}
+
+
+/* Video Items */
+.AllVideos {
+    color: grey;
+    padding: 12px;
+    overflow: hidden;
+    transition:0.5s ease, padding 0.3s ease;
+}
+
+.AllVideos.closed {
+    max-height: 0;
+    padding: 0 12px; 
+}
+.video-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition:  0.2s ease;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.video-item:hover {
+    background-color: #c2c2c2;
+}
+
+.videoContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.videoContent video {
+    width: 80%;
+    height: 20%;
+    border-radius: 6px;
+}
+
+.videoContent i {
+    position: absolute;
+    top: 60%;
+    left:42%;
+    display: flex;
+    font-size: 18px;
+    color: white;
+}
+
+.video-title {
+    font-size: 14px;
+}
+
+.video-time {
+    font-size: 12px;
+}
+
+
+
+/* Footer */
+footer {
+    position: sticky;
+    margin-bottom: 0;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.navContent a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.navContent a p {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
